@@ -1,6 +1,90 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@font-face {
+    font-family: "BebasNeueRegular";
+    src: url("../fonts/BebasNeue-webfont.woff") format('woff');
+}
 
-// ...
+.banner {
+  padding: 20px 20px 10px 20px;
+}
+
+.badges {
+  text-align: center;
+  padding: 10px;
+}
+
+.caption {
+  text-align: center;
+  text-shadow: 3px 3px 3px #000;
+  color: #ddd;
+  font-family: "BebasNeueRegular", sans-serif;
+  & > h5 {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 750px) {
+  // Hide on smaller screens since we run out of space.
+  .caption {
+    display: none;
+  }
+}
+
+.trailer {
+  padding: 10px 0px 10px;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.testimonials {
+  text-align: center;
+}
+
+.screenshots {
+  padding: 10px 0px;
+}
+
+.links {
+  text-align: center;
+  font-family: "BebasNeueRegular", sans-serif;
+}
+
+.social-media {
+  a:not(:last-child) {
+    padding-right: 10px;
+  }
+  
+  .social-media-contents {
+    margin-bottom: 0;
+  }
+}
+
+.footer-contents {
+  text-align: center;
+}
+
+.footer-logos {
+  text-align: center;
+}
+
+.pad-bot-sm {
+  padding: 5px;
+}
