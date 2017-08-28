@@ -69,22 +69,27 @@
 
 .social-media {
   a:not(:last-child) {
-    padding-right: 10px;
+    padding-right: 25px;
   }
   
-  .social-media-contents {
-    margin-bottom: 0;
-  }
+  margin-bottom: 0px;
 }
 
-.footer-contents {
-  text-align: center;
-}
-
-.footer-logos {
+.footer-contents,
+.footer-logos,
+.footer-bottom {
   text-align: center;
 }
 
 .pad-bot-sm {
   padding: 5px;
+}
+
+footer {
+  padding-top: 20px;
+}
+
+// Prevent horizontal collapsing of empty columns.
+.empty-column {
+  min-height: 1px;
 }
