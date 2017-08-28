@@ -6,8 +6,21 @@
     src: url("../fonts/BebasNeue-webfont.woff") format('woff');
 }
 
+body {
+  background-color: #000000;
+  margin: 0px;
+}
+
 .banner {
   padding: 20px 20px 10px 20px;
+}
+
+#landing {
+  background-image: url("../images/slideshow_1.png");
+  background-size: cover;
+  background-position: 0px -40px;
+  
+  box-shadow: 0px 0px 30px 10px #000 inset;
 }
 
 .badges {
