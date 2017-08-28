@@ -1,6 +1,9 @@
 ---
 ---
 
+$blue: #1eaedb;
+$active-blue: #0fa0ce;
+
 @font-face {
     font-family: "BebasNeueRegular";
     src: url("../fonts/BebasNeue-webfont.woff") format('woff');
@@ -8,11 +11,19 @@
 
 a {
   text-decoration: none;
+  
+  &:active, &:visited, &:link {
+    color: $blue;
+  }
+  
+  &:hover {
+    color: $active-blue;
+  }
 }
 
 body {
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ddd;
 }
 
 .banner {
@@ -70,7 +81,11 @@ body {
 
 .testimonials {
   text-align: center;
-  padding: 40px 0px 40px 0px;
+  padding: 40px 0px 0px 0px;
+}
+
+.testimonial-source {
+  color: $blue;
 }
 
 .screenshots {
@@ -104,6 +119,16 @@ body {
 .footer-logos {
   img {
     max-height: 40px;
+  }
+}
+
+// Display only on lg+ screens.
+.show-lg-up {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .show-lg-up {
+    display: unset;
   }
 }
 
