@@ -1,3 +1,11 @@
 google_analytics: UA-60245819-3
+title: "BEAT DRIFT"
+description: "A pure action game that will test your reflexes and hone your skills. Available now for iOS and Android. Feel the beat. Drift with the music. Push the limits to survive."
+social:
+  name: BEATDRIFT
+  links:
+    - https://twitter.com/BEATDRIFT
+    - https://www.facebook.com/BEATDRIFT/
+url: beatdrift.com
 plugins:
   - jekyll-seo-tag
